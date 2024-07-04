@@ -1,0 +1,218 @@
+.repository-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s;
+}
+
+.repository-card:hover {
+    transform: translateY(-5px);
+}
+
+.repository-card .owner-name {
+    margin-top: 0;
+}
+
+.items-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.repository-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.repository-card .stars {
+    font-size: 14px;
+    color: #f39c12;
+    margin: 0;
+}
+
+.repository-card .updated {
+    font-size: 14px;
+    color: #999;
+    margin: 0 6px;
+}
+
+.repository-card .owner-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.repository-card .owner-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.repository-card .owner-info p {
+    font-size: 16px;
+    color: #007bff;
+}
+
+.repository-card .owner-info p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.repository-card .owner-info p a:hover {
+    text-decoration: underline;
+}
+
+.repository-card .languages {
+    font-size: 16px;
+    color: #555;
+}
+
+.repository-card .languages > span {
+    margin-left: 8px;
+}
+
+.repository-card .description {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .repository-card {
+        padding: 15px;
+    }
+
+    .repository-card h2 {
+        font-size: 20px;
+    }
+
+    .repository-card .stars {
+        font-size: 12px;
+    }
+
+    .repository-card .updated {
+        font-size: 12px;
+    }
+
+    .repository-card .owner-info {
+        margin-bottom: 0;
+    }
+
+    .repository-card .owner-info img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .repository-card .owner-info p {
+        font-size: 14px;
+    }
+
+    .repository-card .languages,
+    .repository-card .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .items-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .repository-card h2 {
+        font-size: 18px;
+    }
+
+    .repository-card .stars,
+    .repository-card .updated {
+        font-size: 12px;
+        margin: 2px 0;
+    }
+
+    .repository-card .owner-info {
+        margin-bottom: 0;
+    }
+
+    .repository-card .owner-info p {
+        font-size: 12px;
+    }
+
+    .repository-card .languages,
+    .repository-card .description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .repository-card {
+        padding: 15px;
+    }
+
+    .repository-card h2 {
+        font-size: 20px;
+    }
+
+    .repository-card .stars {
+        font-size: 12px;
+    }
+
+    .repository-card .updated {
+        font-size: 12px;
+    }
+
+    .repository-card .owner-info img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .repository-card .owner-info p {
+        font-size: 14px;
+    }
+
+    .repository-card .languages,
+    .repository-card .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .items-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .repository-card h2 {
+        font-size: 18px;
+    }
+
+    .repository-card .stars,
+    .repository-card .updated {
+        font-size: 12px;
+        margin: 2px 0;
+    }
+
+    .repository-card .owner-info p {
+        font-size: 12px;
+    }
+
+    .repository-card .languages,
+    .repository-card .description {
+        font-size: 12px;
+    }
+
+    .repository-name {
+        max-width: 180px;
+        word-break: break-word;
+        margin-right: 8px
+    }
+}
+
